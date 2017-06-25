@@ -8,7 +8,9 @@ class ProgressBar extends React.Component {
   }
 
   getWidthAsPercentOfTotalWidth = () => {
-    let value =  parseInt(this.props.width * (this.props.percent / 100), 10);
+    let value =  parseInt(
+      this.props.width * (this.props.percent / 100), 10
+    );
     if(/^(\-|\+)?([0-9]+|Infinity)$/.test(value))
       return Number(value);
       return NaN;
