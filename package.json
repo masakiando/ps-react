@@ -1,7 +1,25 @@
 {
-  "name": "ps-react",
+  "name": "ps-react-masakiando",
   "version": "0.1.0",
+  "main": "./lib/index.js",
   "private": true,
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": {
+    "name": "Masaki Ando"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "components",
+    "react",
+    "react-component",
+    "toolkit",
+    "pluralsight"
+  ],
+  "private": false,
   "dependencies": {
     "highlight.js": "^9.10.0",
     "react": "^15.6.1",
@@ -33,6 +51,7 @@
     "file-loader": "0.11.1",
     "fs-extra": "3.0.1",
     "gh-pages": "^0.12.0",
+    "highlight.js": "^9.10.0",
     "html-webpack-plugin": "2.28.0",
     "jest": "20.0.3",
     "npm-run-all": "^4.0.2",
@@ -67,7 +86,8 @@
     "build:lib": "npm run build:commonjs && npm run build:css",
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
-    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js"
+    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
+    "prepublish": "npm run build:lib"
   },
   "jest": {
     "collectCoverageFrom": [
