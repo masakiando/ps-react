@@ -4,7 +4,7 @@ A library of React components created in "Create Reusable React Components" on P
 
 ## Installing
 ```
-npm install ps-react
+npm install ps-react-masakiando
 ```
 # Docs
 [Component documentation](https://masakiando.github.io/ps-react)
